@@ -21,7 +21,6 @@ PINN-based Hybrid LSTM Architecture/
 │   ├── 04_training_pipeline.py          # Training with Bayesian optimization
 │   └── 05_evaluation_visualization.py   # Performance metrics & plots
 ├── main.py                               # Main orchestrator script
-├── final_pinn_model.py                   # Original file (preserved)
 └── README.md                             # This file
 ```
 
@@ -504,8 +503,8 @@ data/
 
 ---
 
-## 👤 Author
-
+## 👤 Authors
+Prajakth N Kumar and Praneeth R Upadhya       
 Modularized from original Colab notebook for educational and research purposes.
 
 ---
