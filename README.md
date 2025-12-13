@@ -504,7 +504,7 @@ data/
 ---
 
 ## 👤 Authors
-Prajakth N Kumar and Praneeth R Upadhya       
+[Prajakth N Kumar](https://github.com/praju120056) and [Praneeth R Upadhya](https://github.com/PraneethUpadhya195)       
 Modularized from original Colab notebook for educational and research purposes.
 
 ---
