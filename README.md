@@ -1,6 +1,6 @@
 # PINN-based Hybrid LSTM Architecture for Battery SOH Prediction
 
-## 📋 Overview
+## Overview
 
 This project implements a **Physics-Informed Neural Network (PINN)** combined with **Long Short-Term Memory (LSTM)** architecture for predicting battery State of Health (SOH). The model incorporates multi-physics constraints including:
 
@@ -8,7 +8,7 @@ This project implements a **Physics-Informed Neural Network (PINN)** combined wi
 - **Impedance-based degradation**: Considers electrolyte resistance (Re) and charge transfer resistance (Rct)
 - **Physical laws**: Enforces physics-based constraints through custom loss functions
 
-## 🗂️ Modularized Structure
+## Modularized Structure
 
 The original monolithic `final_pinn_model.py` (~2094 lines) has been modularized into **5 logical components**:
 
@@ -26,7 +26,7 @@ PINN-based Hybrid LSTM Architecture/
 
 ---
 
-## 📦 Module Descriptions
+## Module Descriptions
 
 ### Module 1: Environment Setup (`01_environment_setup.py`)
 **Lines: 1-274 from original file**
@@ -222,7 +222,7 @@ results = run_visualization_pipeline(CONFIG)
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 ### Option 1: Run Complete Workflow
 ```python
@@ -272,7 +272,7 @@ with torch.no_grad():
 
 ---
 
-## 🧪 Testing Individual Modules
+## Testing Individual Modules
 
 Each module can be tested independently:
 
@@ -285,17 +285,17 @@ print(f"✅ Device: {CONFIG['device']}")
 # Test model architecture
 from modules.model_architectures import EnhancedLSTMPINNModel
 model = EnhancedLSTMPINNModel()
-print(f"✅ Model created with {sum(p.numel() for p in model.parameters()):,} parameters")
+print(f" Model created with {sum(p.numel() for p in model.parameters()):,} parameters")
 
 # Test data preprocessing (with sample data)
 from modules.data_preprocessing import EnhancedBatteryDataPreprocessor
 preprocessor = EnhancedBatteryDataPreprocessor(data_dir=CONFIG['data_dir'])
-print("✅ Preprocessor initialized")
+print(" Preprocessor initialized")
 ```
 
 ---
 
-## 📊 Model Architecture Details
+## Model Architecture Details
 
 ### Hybrid LSTM-PINN Architecture
 
@@ -332,7 +332,7 @@ Loss Function:
 
 ---
 
-## 🔬 Physics Equations
+## Physics Equations
 
 ### Temperature Dependence (Arrhenius)
 ```
@@ -367,7 +367,7 @@ Learned by neural network (2-layer MLP)
 
 ---
 
-## 📈 Expected Performance
+## Expected Performance
 
 Based on the NASA battery dataset:
 
@@ -385,7 +385,7 @@ Based on the NASA battery dataset:
 
 ---
 
-## 📝 Configuration
+## Configuration
 
 Default configuration in `CONFIG` dictionary:
 
@@ -422,7 +422,7 @@ Default configuration in `CONFIG` dictionary:
 
 ---
 
-## 🛠️ Dependencies
+## Dependencies
 
 ```
 torch >= 1.10.0
@@ -442,7 +442,7 @@ pip install torch numpy pandas matplotlib scikit-learn scipy tqdm optuna
 
 ---
 
-## 📂 Data Format
+## Data Format
 
 Expected data structure:
 
@@ -465,7 +465,7 @@ data/
 
 ---
 
-## 🎓 Key Features of Modularization
+## Key Features of Modularization
 
 1. **Separation of Concerns**: Each module has a single, well-defined responsibility
 2. **Reusability**: Individual components can be imported and used independently
@@ -476,7 +476,7 @@ data/
 
 ---
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 **Issue**: `CONFIG not found`
 - **Solution**: Run `01_environment_setup.py` first
@@ -495,7 +495,7 @@ data/
 
 ---
 
-## 📚 References
+## References
 
 1. **Physics-Informed Neural Networks**: Raissi et al. (2019)
 2. **Battery Degradation Modeling**: Severson et al. (2019)
@@ -503,19 +503,19 @@ data/
 
 ---
 
-## 👤 Authors
+## Authors
 [Prajakth N Kumar](https://github.com/praju120056) and [Praneeth R Upadhya](https://github.com/PraneethUpadhya195)       
 Modularized from original Colab notebook for educational and research purposes.
 
 ---
 
-## 📃 License
+## License
 
 This project is provided as-is for educational and research purposes.
 
 ---
 
-## ✅ Verification Checklist
+## Verification Checklist
 
 After modularization, verify:
 - [x] All 5 modules created
@@ -529,7 +529,7 @@ After modularization, verify:
 
 ---
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Run the complete workflow**: `python main.py`
 2. **Review visualizations** in `outputs/` directory
@@ -537,4 +537,4 @@ After modularization, verify:
 4. **Extend the model** by modifying `02_model_architectures.py`
 5. **Add new features** to `03_data_preprocessing.py`
 
-Happy coding! 🚀
+Happy coding!
