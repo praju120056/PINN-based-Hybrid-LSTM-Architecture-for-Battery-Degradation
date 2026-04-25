@@ -1,4 +1,21 @@
 # PINN-based Hybrid LSTM Architecture for Battery SOH Prediction
+## Cite this work
+
+If you use this code or build upon this work, please cite our paper:
+
+```bibtex
+@article{Kumar2026PINN,
+  title={A temperature- and impedance-aware LSTM–PINN framework for physically consistent battery SOH prediction},
+  author={Kumar, P.N. and Upadhya, P.R. and Nischay, S. et al.},
+  journal={Scientific Reports},
+  volume={16},
+  pages={7568},
+  year={2026},
+  doi={10.1038/s41598-026-37850-y}
+}
+```
+Paper DOI: https://doi.org/10.1038/s41598-026-37850-y
+
 
 ## Overview
 
