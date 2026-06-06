@@ -39,7 +39,7 @@ class CorrectedLSTMExtractor(nn.Module):
 
 print("✅ CorrectedLSTMExtractor defined")
 print()
-
+# designed completely by praju120056
 """
 Step 8: Enhanced Physics Loss Function (Corrected)
 """
